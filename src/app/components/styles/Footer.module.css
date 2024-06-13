@@ -1,0 +1,142 @@
+.container {
+  /* background-color: red; */
+  width: 100vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 0px;
+  place-items: center;
+  /* background-color: red; */
+}
+
+.social {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.antisocial {
+  position: absolute;
+}
+
+.anime {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* border-radius: 50%; */
+}
+
+.anime video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.items {
+  /* border: 1px solid blue; */
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 2;
+}
+
+.contact {
+  width: 90%;
+  height: 300px;
+  /* border: 1px solid green; */
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  /* border: 1px solid wheat; */
+  display: grid;
+  place-items: center;
+}
+
+.details {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  /* border: 1px solid wheat; */
+  display: grid;
+  place-items: center;
+}
+
+.details h1 {
+  font-size: 35px;
+  font-family: kolak;
+  color: white;
+}
+
+.inputItem {
+  /* border: 1px solid white; */
+  width: 380px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.inputItem label {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  font-size: 20px;
+  font-family: kolak;
+}
+
+.inputItem input {
+  width: 300px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+}
+.btn {
+  width: 100%;
+  /* border: 1px solid yellow; */
+  display: grid;
+  place-items: center;
+}
+
+.btn button {
+  padding: 10px 40px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+.footer {
+  width: 100%;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  margin-top: 60px;
+}
+.footer h1 {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  font-family: kolak;
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  .container {
+    margin-top: 1940px;
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    margin-top: 150px;
+  }
+}

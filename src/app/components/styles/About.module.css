@@ -1,0 +1,146 @@
+.container {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  margin-top: 270px;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.container .head {
+  position: absolute;
+  color: white;
+  top: 10px;
+  left: 46%;
+  z-index: 10;
+  font-size: 20px;
+}
+
+.cover {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 10px 0 0 red;
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.info h1 {
+  text-align: center;
+  color: white;
+  font-family: kolak;
+}
+
+.text p {
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.text {
+  width: 75%;
+  margin: 0 auto;
+
+  border-radius: 5px;
+
+  box-shadow: 0 10px 10px 0 gold;
+}
+
+.btn a {
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: red;
+  border: none;
+  color: white;
+}
+
+.btn {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.button {
+  position: relative;
+  width: 250px;
+  height: 100px;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  cursor: pointer;
+  transition: 0.5 ease-in-out;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 90px;
+  background-color: black;
+  top: 5px;
+  left: 5px;
+}
+
+.button:after {
+  content: "Learn More";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-family: arial;
+  font-weight: 900;
+  font-size: 25px;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+
+@keyframes move {
+  to {
+    background-position: 2500vh;
+  }
+}
+
+.button:hover {
+  animation: move 30s linear infinite;
+}
+
+.button:hover:after {
+  animation: move 29s linear infinite;
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .container {
+    margin-top: 800px;
+    grid-template-columns: 1fr;
+    height: 160vh;
+  }
+
+  .text p {
+    text-align: center;
+  }
+}

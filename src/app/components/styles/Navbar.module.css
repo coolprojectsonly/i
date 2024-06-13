@@ -1,0 +1,105 @@
+.container {
+  width: 100vw;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  box-shadow: 0 1px 1px 1px gold;
+  background: linear-gradient(to top, black, #333);
+  /* margin-top: -20px; */
+  /* z-index: 40; */
+}
+
+.logo {
+  display: flex;
+  /* background-color: lightblue; */
+  height: 60px;
+  align-items: center;
+}
+.navItem {
+  text-decoration: none;
+  font-size: 20px;
+  /* background-color: pink; */
+  margin-left: 10px;
+  padding: 12px 15px;
+  transition: 0.5s ease-in-out;
+  z-index: 3;
+  color: white;
+  font-family: kolak;
+}
+
+.navItem:nth-last-child(1) {
+  margin-right: 50px;
+  /* background-color: red; */
+}
+
+.logo h3 {
+  font-size: 35px;
+  margin-left: 30px;
+  color: gold;
+  /* font-family: youchat; */
+  font-family: cream;
+  /* transition: 0.5s ease-in-out; */
+}
+
+.navs {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  /* background-color: brown; */
+  width: 580px;
+}
+
+.navs span {
+  width: 90px;
+  height: 40px;
+  background: linear-gradient(to right, lightblue, indigo);
+  position: absolute;
+  top: 10px;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  left: 7px;
+  border-radius: 5px;
+}
+
+.home {
+  background-color: yellow;
+}
+
+.about {
+  background-color: red;
+}
+
+.navItem:nth-child(1):hover ~ span {
+  left: 1%;
+  opacity: 1;
+}
+.navItem:nth-child(2):hover ~ span {
+  left: 18.2%;
+  opacity: 1;
+}
+
+.navItem:nth-child(3):hover ~ span {
+  left: 36.5%;
+  opacity: 1;
+}
+
+.navItem:nth-child(4):hover ~ span {
+  left: 55%;
+  opacity: 1;
+}
+
+.navItem:nth-child(5):hover ~ span {
+  left: 73%;
+  opacity: 1;
+}
+
+@media screen and (min-width: 0) and (max-width: 750px) {
+  .navs {
+    justify-content: left;
+  }
+
+  .container {
+    grid-template-columns: 1fr 4fr;
+  }
+}

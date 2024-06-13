@@ -1,0 +1,139 @@
+/* body {
+  background-color: black;
+}
+
+.container {
+  width: 100vw;
+  height: 50px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+  display: flex;
+  border-color: lightgreen;
+  margin-left: 30px;
+}
+.link:hover {
+  
+  background-color: red;
+
+  border: 1px solid blue;
+}
+
+.navs {
+  width: 500px;
+  
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.navs span {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  background-color: red;
+  left: 0;
+  top: 5px;
+  left: 5px;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.navs a {
+  text-decoration: none;
+ 
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  color: white;
+  z-index: 2;
+}
+
+.navs a:nth-child(1):hover ~ span {
+  left: 14px;
+  opacity: 1;
+}
+
+.navs a:nth-child(2):hover ~ span {
+  left: 100px;
+  opacity: 1;
+}
+
+.navs a:nth-child(3):hover ~ span {
+  left: 200px;
+  opacity: 1;
+}
+
+.navs a:nth-child(4):hover ~ span {
+  left: 300px;
+  opacity: 1;
+}
+
+.navs a:nth-child(5):hover ~ span {
+  left: 396px;
+  opacity: 1;
+}
+
+@media screen and (min-width: 0) and (max-width: 700px) {
+  .container {
+    background-color: black;
+    grid-template-columns: 3fr 1.5fr;
+  }
+
+  .navs {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+  }
+
+  .navs span {
+    background-color: yellow;
+    width: 200px;
+    left: 0;
+  }
+
+  .navs a:nth-child(1):hover ~ span {
+    left: 0px;
+    opacity: 1;
+    top: 20px;
+  }
+
+  .navs a:nth-child(2):hover ~ span {
+    top: 75px;
+    opacity: 1;
+    left: 0;
+  }
+
+  .navs a:nth-child(3):hover ~ span {
+    left: 0px;
+    opacity: 1;
+    left: 0;
+    top: 130px;
+  }
+
+  .navs a:nth-child(4):hover ~ span {
+    left: 300px;
+    opacity: 1;
+    left: 0;
+    top: 185px;
+  }
+
+  .navs a:nth-child(5):hover ~ span {
+    left: 396px;
+    opacity: 1;
+    left: 0;
+    top: 240px;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 3000px) {
+  .navs {
+    display: flex;
+    margin-left: 140px;
+  }
+} */
